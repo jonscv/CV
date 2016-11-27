@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Jonathan Ah-Yoon's CV</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width" />
+	<style>
+		/**
+ * "Variables"
+ */
+
+		h1,
+		h2,
+		.date {
+			font: small-caps normal 100% Constantia, 'Palatino Linotype', Palatino, Georgia, serif;
+		}
+
+		h1,
+		header>h1>span,
+		header>ul>li:before {
+			color: #9BBB59;
+		}
+		/**
+ * Style
+ */
+
+		* {
+			margin: 0;
+		}
+
+		html {
+			background: #9BA2B0;
+			font-size: 14px;
+		}
+
+		body {
+			width: 65em;
+			padding: 7em 8%;
+			box-sizing: border-box;
+			margin: 1em auto;
+			background: white;
+			box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, .3);
+			font: 100%/1.6 'Segoe UI', Optima, 'Hiragino Kaku Gothic Pro', 'Apple Gothic', Tahoma, 'Helvetica Neue', sans-serif;
+			-moz-hyphens: auto;
+			-ms-hyphens: auto;
+			-o-hyphens: auto;
+			-webkit-hyphens: auto;
+			hyphens: auto;
+			-moz-transition: .5s font-size;
+			-ms-transition: .5s font-size;
+			-o-transition: .5s font-size;
+			-webkit-transition: .5s font-size;
+			transition: .5s font-size;
+		}
+
+		h1,
+		h2 {
+			page-break-after: avoid;
+		}
+
+		h1 {
+			margin-top: 1.2em;
+			font-size: 180%;
+		}
+
+		h2 {
+			margin-top: 1em;
+			font-size: 150%;
+		}
+
+		a {
+			color: #4F6128;
+		}
+
+		abbr[title] {
+			border-bottom: 1px dotted #4F6128;
+			cursor: help;
+		}
+
+		p {
+			margin: .6em 0;
+		}
+
+		.margin {
+			margin: 0 9em;
+		}
+
+		h1+p,
+		h2+p {
+			margin-top: 0;
+		}
+
+		ul {
+			padding: 0;
+			list-style: square;
+		}
+
+		ul ul {
+			padding-left: 3em;
+		}
+
+		header {
+			text-align: center;
+		}
+
+		header>h1 {
+			color: #7F7F7F;
+			border-bottom: 1px solid #9BBB59;
+			margin: 0 0 .15em;
+			text-indent: 1.2em;
+			font-size: 370%;
+			line-height: 1.05;
+			font-variant: normal;
+		}
+
+		header>h1>span {
+			display: inline-block;
+			margin-left: -2.7em;
+			vertical-align: super;
+			font-size: 50%;
+		}
+
+		header>ul {
+			display: block;
+			margin-bottom: .5em;
+		}
+
+		header>ul>li {
+			display: inline;
+			list-style: none;
+		}
+
+		header>ul>li:before {
+			content: '● ';
+		}
+
+		header>ul>li:first-child:before {
+			content: none;
+		}
+
+		address {
+			font-style: normal;
+		}
+
+		.details {
+			display: inline;
+			width: 0 auto;
+			height: 0 auto;
+			margin: .1px;
+			clear: left;
+		}
+
+		ol.timeline {
+			padding: 0;
+			border: 0 solid #ddd;
+			border-width: 4px 0;
+		}
+
+		ol.timeline>li {
+			list-style: none;
+			padding: .4em 0;
+			border: 1px solid white;
+			/* Chrome printing bug */
+			border-top-color: #ccc;
+		}
+
+		ul.seperator {
+			padding: 0;
+			border: 0 solid #ddd;
+			border-width: 4px 0;
+		}
+
+		ul.seperator>li {
+			list-style: none;
+			padding: .4em 0;
+			border: 1px solid white;
+			border-top-color: #ccc;
+			:
+		}
+
+		ol.timeline>li:first-child {
+			border-top: 0;
+		}
+
+		ul.seperator {}
+
+		ol.timeline>li>p {
+			margin: 0;
+		}
+
+		ol.timeline>li>.date {
+			float: left;
+			margin-left: .1em;
+			max-width: 8rem;
+			color: gray;
+			font-size: 110%;
+		}
+
+		ol.timeline>li>.date~p {
+			margin-left: 9rem;
+		}
+
+		.note a:not(:hover):not(:active) {
+			color: inherit;
+		}
+
+		ul.timeline {
+			border: 0 solid rgb(7, 99, 41);
+			border-width: 4px 0;
+		}
+
+		.note {
+			margin: .4em 0 .4em 0;
+			font-size: 75%;
+		}
+
+		.note2 {
+			margin: .4em;
+			/*padding:1em;*/
+			font-size: 75%;
+		}
+
+		footer {
+			margin-top: 3em;
+			font-style: italic;
+		}
+
+		.amp {
+			font-style: italic;
+		}
+
+		#projects .timeline li p:nth-of-type(2) a:first-of-type {
+			font-weight: bold;
+		}
+
+		#SkypeButton_Call_jonnyskypehigh80_1 {
+			display: block;
+			width: 0 auto;
+			height: 10px;
+			margin: -18px 0 2px 0;
+		}
+
+		@media (max-width:950px) {
+			html {
+				font-size: 12px;
+			}
+		}
+
+		@media (max-width:700px) {
+			html {
+				font-size: 11px;
+			}
+		}
+
+		@media (max-width:600px) {
+			body {
+				width: auto;
+				margin: 1em;
+			}
+		}
+
+		@media print {
+			html {
+				background: none;
+			}
+			body {
+				box-shadow: none;
+			}
+			header>h1 {
+				color: black;
+			}
+			footer {
+				display: none;
+			}
+		}
+	</style>
+
+</head>
+
+<body>
+	<!--IDEA: ADD BOOTSTRAP A LINK OPEN DIRECTLY TO CV. DONT LINK TO DIGITAL PORTFOLIO
+	AS ITS AN EXTRA STEP.-->
+	<!--IDEA: HAVE ACTUAL EVIDENCE OF WORKING WEBSITES-->
+
+	<button onclick="myFunction()">Print this page</button>
+
+	<script>
+		function myFunction() {
+			window.print();
+		}
+	</script>
+
+	<header>
+		<h1>Jonathan Ah-Yoon <span>CV</span></h1>
+		<div class="details">EMAIL:<a href="jonathanahyoon@outlook.com">jonathanahyoon@outlook.com</a></div>
+		<div class="details">MOBILE: <a href="tel:07783160775">07783160775</a></div>
+		<div class="details">ONLINE CV:<a href="https://goo.gl/oIgzsD"> https://goo.gl/oIgzsD</a></div>
+		<!-- <div class="details">JON'S BLOG:<a href="https://goo.gl/istvjP"> https://goo.gl/istvjP</a></div> -->
+		<script type="text/javascript" src="https://secure.skypeassets.com/i/scom/js/skype-uri.js"></script>
+		<div id="SkypeButton_Call_jonnyskypehigh80_1">
+			<script type="text/javascript">
+				Skype.ui({
+					"name": "dropdown",
+					"element": "SkypeButton_Call_jonnyskypehigh80_1",
+					"participants": ["jonnyskypehigh80"],
+					"imageSize": 12
+				});
+			</script>
+		</div>
+
+	</header>
+
+	<!-------------------------->
+	<!--SUMMARY----------------------------------------------------------------------------------------------------->
+	<!----------------------------------------------------------------------------------------------------------------------------------------------->
+	<section id="summary">
+	</section>
+	</a>
+
+	<!------------------------------------------------------------------------------------------------------------------------------------------------->
+	<!-------------------------->
+	<!---WORK EXPERIENCE-->
+	<!----------------------------------------------------------------------------------------------------------------------------------------------->
+	<section id="work-experience">
+		<h1>Work Experience and Acquired Skills</h1>
+
+		<ol class="timeline">
+
+			<!--PORTFOLIOMODAL4-->
+			<li>
+				<p class="date">12/07/16 -  01/10/16<br></p>
+				<div class="primary col">
+
+					<p class="margin">-Treehouse Online Tech Accelerator/ Deliveroo cyclist: 3-month course to enhance my front and back-end application development know-how. Confident with Test and Behaviour Driven Development, UAT, Ruby on Rails, HTML5, CSS3, Java, MySQL, Python, PHP and Agile.
+
+Worked as a Deliveroo cyclist part-time over the course of study.</b><a href="#portfolioModal4" class="portfolio-link-top" data-toggle="modal">...more</a></p>
+			</a>
+			</li>
+			<!--PORTFOLIOMODAL3-->
+			<li>
+				<p class="date">10/10/15 - 05/07/16<br></p>
+				<div class="primary col">
+	<p class="margin">-Business Analyst at <a href="https://www.pcfg.co.uk/about-us">PCFG</a> (Contract): Brought in to assist with projects linked with banking license application<a href="#portfolioModal3" class="portfolio-link-top" data-toggle="modal">...more</a></p>
+
+			</li>
+
+			<li>
+				<p class="date">03/12/14 - 10/07/15<br></p>
+				<div class="primary col">
+
+					<p class="margin">-Travelling through Asia for 8 months</p>
+					</a>
+			</li>
+
+			<li>
+				<p class="date">13/10/12 - 02/10/13<br></p>
+				<div class="primary col">
+
+					<p class="margin">-Senior IT Engineer at <a href="http://Ge.com">General Electric</a>: Providing VIP I.T Support (1st,2nd,3rd line support) to CEO, CTO, CFO. Lead the development of a ticket management system. <a href="#portfolioModal2" class="portfolio-link-top"
+										data-toggle="modal">...more</p>
+				</a>
+			</li>
+
+			<li>
+				<p class="date">05/04/12 - 02/09/12<br></p>
+				<div class="primary col">
+
+					<p class="margin">-Infrastructure Support Engineer at <a href="http://www.aimia.com/en.html">Groupe Aeroplan (AIMIA)</a>: To ensure sustained service levels above 95% satisfaction. Focus on quality of customer service, using ITIL framework to guide team in a structured
+						and effective way. Contributed a business process improvement initiative saving company thousands of pounds in project overrun fees. Thanked personally by head of department.</p>
+					</a>
+			</li>
+
+			</div>
+
+			<li>
+				<p class="date">14/02/2010- 05/01/2012 <br></p>
+				<div class="primary col">
+
+					<p class="margin">-Network Infrastructure Engineer at the <a href="https://en.wikipedia.org/wiki/conservative_campaign_headquarters">Conservative Campaign Headquarters</a>: Worked for the UK Prime Minister as a Network Infrastructure Engineer assisting Sonicwall firewall roll-out across the UK
+Project managed roll-out of Sonicwall Firewall Security to over 100 constituencies across the UK (Conservative Campaign Headquarters).</p>
+
+			</li>
+
+			</div>
+
+		</ol>
+
+		<!------------------------------------------------------------------------------------------------------------------------------------------------->
+		<!-------------------------->
+		<!--EDUCATION-->
+		<!--------------------------------------------------------------------------------------------------->
+		<!----------------------------------------------------------------------------------------------------------------------------------------------->
+		<section id="education">
+			<h1>Education</h1>
+			<ol class="timeline">
+				<li>
+					<p class="date">2013–2014</p>
+					<p><i>MSc in Digital Entrepreneurship</i> -Pass</p>
+					<p class="note2">
+						<a href="http://www.gold.ac.uk/about/">Goldsmiths University</a>
+					</p>
+				</li>
+				<li>
+					<p class="date">1998–2002</p>
+					<p><i> BSc in Business Information Technology</i> -Pass</p>
+					<p class="note2">
+						<a href="https://www.westminster.ac.uk/about-us">University of Westminster</a>
+					</p>
+				</li>
+			</ol>
+		</section>
+
+		<!------------------------------------------------------------------------------------------------------------------------------------------------->
+		<!-------------------------->
+		<!--CERTIFICATION-->
+		<!----------------------------------------------------------------------------------------------------->
+		<!----------------------------------------------------------------------------------------------------------------------------------------------->
+		<section id="industry-recognition">
+			<h1>Certification</h1>
+			<ul class="seperator">
+				<li> Business Analysis Foundation certification</li>
+				<li> PRINCE2 foundation Candidate number: P2R/988382 - ILX Group plc</li>
+				<li> CCNA (Cisco Certified Network Associate)</li>
+			</ul>
+		</section>
+
+
+		<!-------------------------->
+		<!--SELECTED PROJECTS AND ACQUIRED SKILLS-><!---------------------------------------------------------------------------------------------------->
+		<!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+		<section id="projects">
+			<h1>Selected projects and acquired skills</h1>
+			<ul class="seperator">
+				<li>
+					<p>
+						<div class="primary col">
+							<a href="#portfolioModal3" class="portfolio-link-top" data-toggle="modal">
+								<h5>Document Management System</h5></a>
+							<p class="note">BUSINESS ANALYST AT PCFG (PRIVATE COMMERCIAL FINANCE GROUP) </p>
+							<ul>
+							<li>-Performed a Gap analysis on proposed data store document management system</li>
+							<li>-Requirements gathering for eQuote system</li>
+							<li>-UAT of the Equote application</li>
+							<li>-Wireframing and mocking up proposed changes</li>
+							<li>-Designing security groups, data types, data definitions</li>
+							<li>-Rich Picture Diagram; Business Activity Modelling; Flowcharts; Swimlanes, Use Cases</li>
+							<li>-Procedure and policy user guides, training, support and management of systems</li>
+							<li>-Feasibility Reports</li>
+							</ul>	</p>
+
+				<li>
+					<p>
+						<div class="primary col">
+							<a href="#portfolioModal5" class="portfolio-link-top" data-toggle="modal">
+								<h5>Web Development</h5></a>
+							<p class="note">MSC IN DIGITAL ENTREPRENEURSHIP AT GOLDSMITHS UNIVERTY</p>
+							<p>I have 2 years’ Web Development experience (Twitter Bootstrap HTML5, CSS3, MySQL, PHP, Java, Github, TDD, BDD, Python, Ruby on Rails). I have a portfolio of web projects including an online dating website, recruitment and CV website.</li>
+
+				<li>
+					<p>
+						<div class="primary col">
+							<a href="#portfolioModal1" class="portfolio-link-top" data-toggle="modal">
+								<h5>Generating Ideas</h5></a>
+							<p class="note">MSC IN DIGITAL ENTREPRENEURSHIP AT GOLDSMITHS UNIVERTY</p>
+							<p>Using divergent and convergent thinking techniques to improve quality of ideas at the front-end of innovation</p>
+
+							<li>
+								<p>
+									<div class="primary col">
+										<a href="#portfolioModal6" class="portfolio-link-top" data-toggle="modal">
+											<h5>Agile Principles Practices and Innovation</h5></a>
+										<p class="note">MSC IN DIGITAL ENTREPRENEURSHIP AT GOLDSMITHS UNIVERTY</p>
+										<p>
+											<p>An in depth literature review on how companies use Agile principles and practices to innovate products and services.</p>
+
+										</p>
+										<li>
+											<p>
+												<div class="primary col">
+													<a href="#portfolioModal2" class="portfolio-link-top" data-toggle="modal">
+														<h5>Development of Ticketing System</h5></a>
+													<p class="note">GENERAL ELECTRIC (VIP I.T Support)</p>
+													<p>Developed a ticket management system for the purpose of improving customer service levels to VIP clientele (CEO level and Directors). This culminated in a 50% increase in team efficiency and much improved project reporting, logging, tracking, monitoring, and statistical report generation system. Increase in team efficiency, management reporting, stock provisioning, and resource planning.</li>
+
+										<li>
+											<p>
+												<div class="primary col">
+													<a href="#portfolioModal4" class="portfolio-link-top" data-toggle="modal">
+														<h5>Firewall roll-out across UK constituencies</h5></a>
+													<p class="note">CONSERVATIVE CAMPAIGN HEADQUARTERS (Network Infrastructure Analyst)</p>
+													Worked for the UK Prime Minister as a Network Infrastructure Engineer assisting Sonicwall firewall roll-out across the UK.</p>
+										</li>
+			</ul>
+
+			<section id="interests">
+				<strong><h1>Interests</h1></strong>
+				<h5>RECENT ACTIVITIES</h5>
+
+				<p> Here is a list of talks and workshops attended recently:</p>
+
+				<p> - Appathon (Android) Guinness World Records Challenge</p>
+				<p> - Entrepreneurial Developments in Consultancy: What makes a successful consultant </p>
+				<p> - Effective communication (Body language, better presentations) </p>
+				<p> - Drawing at the British Museum </p>
+				<p> - Design Thinking - An Emerging Problem Solving Approach</p>
+				<p><a href="https://goo.gl/aY93hS">- Can you work from anywhere?</a></p>
+				<p> - Agile Project Management</p>
+
+				<H5>SPORTS</H5>
+				<p>- British Military Fitness
+					<p>- Cycled from London to Brighton, London to Oxford, London to Ireland</p>
+					<p>- Competed in Amateur Thai Boxing competition</p>
+					<p>- Tennis, Table Tennis </p>
+					<p>- Wimbledon Ball Boy (1995)</p>
+
+
+					<H5>MUSIC</H5>
+					<p></p>Played Piano (Grade 4 distinction) in concert hall on special occassion</p>
+
+				</div>
+			</section>
+
+
+			<!--PORTFOLIOMODAL1--------------------------------->
+			<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl">
+							</div>
+						</div>
+					</div>
+
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-8 col-lg-offset-2">
+								<div class="modal-body">
+
+									<h2>Innovation project </h2>
+									<!--dissertation-->
+									<p> <a href="https://goo.gl/xS3zW1">Idea Generation for think tank tasked with identifying important issues facing youth of today</a>
+
+										<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--PORTFOLIOMODAL1--------------------------------->
+
+			<!--PORTFOLIOMODAL2--------------------------------->
+			<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl">
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+
+								<h2><strong>GENERAL ELECTRIC</strong></h2>
+								<p>-VIP I.T Support</p>
+								Developed a <a href:"http://jonscv.github.io/img/portfolio/resized/techbar.png">ticket management system</a> for the purpose of improving customer service levels to VIP clientele (CEO level and Directors). This culminated in a 50% increase in team efficiency and much improved project reporting.</p>
+
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!--PORTFOLIOMODAL2--------------------------------->
+
+
+			<!--PORTFOLIOMODAL3--------------------------------->
+			<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+
+								<h2>PCFG</h2>
+								<li> <strong>Business Analyst</strong></li>
+								<p class="note">BUSINESS ANALYST AT PCFG (PRIVATE COMMERCIAL FINANCE GROUP) </p>
+								<ul>
+								<li>-Performed a Gap analysis on proposed data store document management system</li>
+								<li>-Requirements gathering for eQuote system</li>
+								<li>-UAT of the Equote application</li>
+								<li>-Wireframing and mocking up proposed changes</li>
+								<li>-Designing security groups, data types, data definitions</li>
+								<li>-Rich Picture Diagram; Business Activity Modelling; Flowcharts; Swimlanes, Use Cases</li>
+								<li>-Procedure and policy user guides, training, support and management of systems</li>
+								<li>-Feasibility Reports</li>
+								</ul>	</p>
+
+
+
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!--PORTFOLIOMODAL3--------------------------------->
+
+			<!--PORTFOLIOMODAL4--------------------------------->
+			<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl">
+							</div>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+
+								<STRONG>Deliveroo Cyclist Research</STRONG>
+								<p>Acquired knowledge on value chain, service implementation, logistics, and the use of mobile applications for order capture, assignment, tracking, and final delivery of restaurant orders to customers.</p>
+
+								<STRONG>Tech Degree</STRONG>
+								<p>Front End Web Development</p>
+								<p>Full Stack JavaScript</p>
+								<p>iOS</p>
+								<p>Android</p>
+								<p>Java Web Development</p>
+								<p>Python Web Development</p>
+
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<!--PORTFOLIOMODAL4--------------------------------->
+
+			<!--PORTFOLIOMODAL5--------------------------------->
+			<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl">
+							</div>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+
+								<h2>Development Projects</h2>
+								<!--Coding Skill-->
+								<p> <i> AIM</i></p>
+								<ul>
+									<li> To utilise front and back-end innovation techniques under deliberate time constraint, using web app development to address societal issues.</li></ul>
+
+								<p><i>OBJECTIVES</i></p>
+									<ul>
+										<li>Deliver projects on time, within scope, within budget.</li>
+								</ul>
+
+								<p><i>RESULT</i></p>
+									<ul>
+										<li> MSc dissertation on <a href="https://view.publitas.com/p222-3420/agile-principles-as-facilitators-in-the-effective-delivery-od-digital-innovative-products-in-uk-firms/">Agile Project Management</a></li>
+										<li> Innovating ideas using rich picture diagramming, soft system methodology to generate ideas to address issues facing the youth of today. </li>
+										<li> Innovating ideas using rich picture diagramming, soft system methodology to generate ideas to addressing issues facing older adults.</li>
+										<li> Front-End and Back-End Web Development: Developed an online dating website for older adults and a job board for those looking wishing to bypass recruitment agencies.</li>
+</ul>
+										<p><i>KEY SKILLS UTILISED</i></p>
+										<ul>
+											<li> Agile, Scrum, Business Analysis, Python, Ruby on Rails, Javascript, PHP, MySQL, HTML5, CSS3, Heroku, Bitbucket, <a href="https://github.com/jahyoon">GIT version control</a>,Test Driven Development (TDD), Behaviour Driven Development (BDD).</li>
+</ul>
+
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!--PORTFOLIOMODAL5--------------------------------->
+
+			<!--PORTFOLIOMODAL6--------------------------------->
+			<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl">
+							</div>
+						</div>
+
+					</div>
+					<div class="row">
+						<div class="col-lg-8 col-lg-offset-2">
+							<div class="modal-body">
+
+								<section id="dissertation">
+									<strong><h1>Dissertation</h1></strong>
+									<p>MSc dissertation on <a href="https://view.publitas.com/p222-3420/agile-principles-as-facilitators-in-the-effective-delivery-od-digital-innovative-products-in-uk-firms/">Agile Project Management</a>
+									</p>
+								</section>
+								<button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<!--PORTFOLIOMODAL6--------------------------------->
+
+			<!--PORTFOLIOMODAL7--------------------------------->
+			<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+				<div class="modal-content">
+					<div class="close-modal" data-dismiss="modal">
+						<div class="lr">
+							<div class="rl">
+							</div>
+						</div>
+
+					</div>
+
+
+
+					<!-------------------------->
+					<!--PORTFOLIOMODAL7--------------------------------->
+
+
+
+					<footer>
+						<p>References are available upon request.</p>
+					</footer>
+
+					<script>
+						(function() {
+							if (!document.querySelectorAll) return;
+							var external = document.querySelectorAll('a[href^="http://"], a[href^="https://"]'),
+								a;
+							for (var i = external.length; a = external[--i];) a.setAttribute('target', '_blank');
+						})();
+					</script>
+
+
+					<script src="js/jquery.js"></script>
+
+					<!-- Bootstrap Core JavaScript -->
+					<script src="js/bootstrap.min.js"></script>
+
+					<!-- Plugin JavaScript -->
+					<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+					<script src="js/classie.js"></script>
+					<script src="js/cbpAnimatedHeader.js"></script>
+
+					<!-- Contact Form JavaScript -->
+					<script src="js/jqBootstrapValidation.js"></script>
+					<script src="js/contact_me.js"></script>
+
+					<!-- Custom Theme JavaScript -->
+					<script src="js/freelancer.js"></script>
+
+
+
+
+</body>
+
+</html>
